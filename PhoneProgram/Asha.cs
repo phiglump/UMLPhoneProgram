@@ -8,9 +8,11 @@ namespace PhoneProgram
 {
     class Asha : IDumb
     {
-        string name = "Asha";
+        
         string IDumb.getName()
         {
+            string name = "Asha";
+            Console.WriteLine("Dumb Phone: " + name);
             return name;
         }
     }

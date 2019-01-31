@@ -11,16 +11,32 @@ namespace PhoneProgram
         public IPhoneFactory factory;
         public Manufacturers manu;
 
-        public phoneTypeChecker(Manufacturers manu)
+        public void phoneTypeChecker(Manufacturers manu)
         {
-            Manufacturers phoneSamsung = Manufacturers.Samsung;
-            Manufacturers phoneHTC = Manufacturers.HTC;
-            Manufacturers phoneNokia = Manufacturers.Nokia;
-            void CheckProducts()
+            if (manu == Manufacturers.HTC)
+            {
+                HTCFactory H = new HTCFactory();
+                factory = H;
+                CheckProducts(factory);
+            }
+            else if (manu == Manufacturers.Nokia)
+            {
+                NokiaFactory N = new NokiaFactory();
+                factory = N;
+                CheckProducts(factory);
+            }
+            else if (manu == Manufacturers.Samsung)
+            {
+                SamsungFactory S = new SamsungFactory();
+                factory = S;
+                CheckProducts(factory);
+            }
+            void CheckProducts(IPhoneFactory factory)
             {
                 factory.GetSmart();
                 factory.GetDumb();
             }
         }
+
     }
 }

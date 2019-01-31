@@ -8,9 +8,11 @@ namespace PhoneProgram
 {
     class Genie : IDumb
     {
-        string name = "Genie";
+        
         string IDumb.getName()
         {
+            string name = "Genie";
+            Console.WriteLine("Dumb Phone: " + name);
             return name;
         }
     }

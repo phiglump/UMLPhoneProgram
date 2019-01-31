@@ -8,9 +8,11 @@ namespace PhoneProgram
 {
     class Lumia : ISmart
     {
-        readonly string name = "Lumia";
+        
         string ISmart.getName()
         {
+            string name = "Lumia";
+            Console.WriteLine("Smart Phone: " + name);
             return name;
         }
     }

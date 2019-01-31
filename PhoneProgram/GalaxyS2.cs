@@ -8,9 +8,11 @@ namespace PhoneProgram
 {
     class GalaxyS2 : ISmart
     {
-        string name = "GalaxyS2";
+        
         string ISmart.getName()
         {
+            string name = "GalaxyS2";
+            Console.WriteLine("Smart Phone: " + name);
             return name;
         }
     }
