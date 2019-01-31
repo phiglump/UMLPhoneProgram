@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace PhoneProgram
 {
-    class Program
+    class Asha : IDumb
     {
-        static void Main(string[] args)
+        string name = "Asha";
+        string IDumb.getName()
         {
-            PhoneTypeChecker check = new PhoneTypeChecker();
+            return name;
         }
     }
 }

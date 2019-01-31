@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace PhoneProgram
 {
-    class Program
+    enum Manufacturers
     {
-        static void Main(string[] args)
-        {
-            PhoneTypeChecker check = new PhoneTypeChecker();
-        }
-    }
+        Samsung, HTC, Nokia
+    };
 }

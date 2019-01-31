@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace PhoneProgram
 {
-    class Program
+    interface IPhoneFactory
     {
-        static void Main(string[] args)
-        {
-            PhoneTypeChecker check = new PhoneTypeChecker();
-        }
+        ISmart GetSmart();
+        IDumb GetDumb();
     }
 }

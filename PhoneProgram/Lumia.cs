@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace PhoneProgram
 {
-    class Program
+    class Lumia : ISmart
     {
-        static void Main(string[] args)
+        readonly string name = "Lumia";
+        string ISmart.getName()
         {
-            PhoneTypeChecker check = new PhoneTypeChecker();
+            return name;
         }
     }
 }

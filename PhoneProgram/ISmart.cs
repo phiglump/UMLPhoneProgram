@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace PhoneProgram
 {
-    class Program
+    interface ISmart
     {
-        static void Main(string[] args)
-        {
-            PhoneTypeChecker check = new PhoneTypeChecker();
-        }
+        string getName();
     }
 }
